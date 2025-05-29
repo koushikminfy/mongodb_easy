@@ -16,9 +16,11 @@ intersion of samples data:
 
 ## Easy assignment 
 ## 1. List All Products in Electronics Category
+ ```js
  db.products.aggregate([
   { $match: { category: "Electronics" } }
 ]);
+```
 
   # Description:
 Fetch all documents where the category is "Electronics".
@@ -26,7 +28,7 @@ Fetch all documents where the category is "Electronics".
 ![image](https://github.com/user-attachments/assets/533335ec-c639-425a-b7e7-1265680e7595)
 
 ## 2. Count Products per Category
-
+```js
 db.products.aggregate([
   {
     $group: {
@@ -35,6 +37,7 @@ db.products.aggregate([
     }
   }
 ]);
+```
   # Description:
 Group products by category and count the number of products in each category.
 
@@ -42,11 +45,12 @@ Group products by category and count the number of products in each category.
 ![image](https://github.com/user-attachments/assets/0547b3aa-7dac-4d9f-afc9-6b172bde0bc8)
 
 ## 3. Product Names and Prices Sorted by Price Descending
-
+```js
 db.products.aggregate([
   { $project: { _id: 0, name: 1, price: 1 } },
   { $sort: { price: -1 } }
 ]);
+```
   # Description:
 List product names and prices sorted from highest to lowest price.
 
