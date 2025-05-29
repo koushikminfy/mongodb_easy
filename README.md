@@ -16,7 +16,7 @@ intersion of samples data:
 
 
 ## Easy assignment 
-1. List All Products in Electronics Category
+## 1. List All Products in Electronics Category
 db.products.aggregate([
   { $match: { category: "Electronics" } }
 ]);
@@ -26,7 +26,7 @@ Fetch all documents where the category is "Electronics".
 
 ![image](https://github.com/user-attachments/assets/533335ec-c639-425a-b7e7-1265680e7595)
 
-2. Count Products per Category
+## 2. Count Products per Category
 javascript
 Copy
 Edit
@@ -44,7 +44,7 @@ Group products by category and count the number of products in each category.
 
 ![image](https://github.com/user-attachments/assets/0547b3aa-7dac-4d9f-afc9-6b172bde0bc8)
 
-3. Product Names and Prices Sorted by Price Descending
+## 3. Product Names and Prices Sorted by Price Descending
 javascript
 Copy
 Edit
